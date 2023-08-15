@@ -1,0 +1,32 @@
+--First table shows the names of authors and the works they've written
+
+CREATE TABLE authors (id INTEGER PRIMARY KEY, name TEXT, story_title TEXT);
+
+INSERT INTO authors VALUES (1, 'Edgar Allan Poe', 'The Raven'); 
+INSERT INTO authors VALUES (2, 'Lewis Carroll', 'Jabberwocky');
+INSERT INTO authors VALUES (3, 'J.K. ROWLING', 'Harry Potter');
+INSERT INTO authors VALUES (4, 'George Orwell', 'Animal Farm');
+INSERT INTO authors VALUES (5, 'Jane Austen', 'Emma'); 
+INSERT INTO authors VALUES (6, 'Ernest Hemingway', 'In Our Time');
+INSERT INTO authors VALUES (7, 'Stephen King', 'It');
+INSERT INTO authors VALUES (8, 'Charles Dickens', 'Oliver Twist');
+
+--Second table identifies each author by a numeric id and provide facts about their background
+
+CREATE TABLE background (id INTEGER PRIMARY KEY, military_experience TEXT, country_origin TEXT);
+
+INSERT INTO background VALUES (1,'yes','US');
+INSERT INTO background VALUES (2,'no','UK');
+INSERT INTO background VALUES (3,'no','UK');
+INSERT INTO background VALUES (4,'no','India');
+INSERT INTO background values (5,'no','US');
+INSERT INTO background VALUES (6,'no','US');
+INSERT INTO background VALUES (7,'no','US');
+INSERT INTO background VALUES (8,'yes','UK');
+
+--This JOIN table combines the authors' names with their background info
+
+SELECT authors.name, background.military_experience, background.country_origin
+FROM background
+LEFT OUTER JOIN authors
+ON authors.id=background.id;
