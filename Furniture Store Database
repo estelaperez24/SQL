@@ -1,0 +1,48 @@
+--create a furniture store sales database
+
+CREATE TABLE sales(
+  ID INTEGER  NOT NULL PRIMARY KEY
+, transaction_date TEXT
+, product TEXT
+, price INTEGER
+, payment_type TEXT
+, name TEXT
+, city TEXT
+, state TEXT
+, country TEXT
+, account_created TEXT
+, last_login TEXT
+, latitude REAL
+, longitude REAL
+);
+
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/2/09 7:35','Chair',1200,'Diners','Hani','Salt Lake city','UT','United states','12/30/08 5:44','1/6/09 10:52',40.76083,-111.89028);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/6/09 12:56','Chair',1200,'Visa','Jeremy','Manchester','England','United Kingdom','1/6/09 10:58','1/6/09 13:31',53.5,-2.2166667);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/1/09 11:05','Chair',1200,'Diners','Janis','Ballynora','Cork','Ireland','12/10/07 12:37','1/7/09 1:52',51.8630556,-8.58);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/5/09 4:10','Chair',1200,'Mastercard','Nicola','Roodepoort','Gauteng','South Africa','1/5/09 2:33','1/7/09 5:13',-26.1666667,27.8666667);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/6/09 7:18','Chair',1200,'Visa','asuman','Chula Vista','CA','United states','1/6/09 7:07','1/7/09 7:08',32.64,-117.08333);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/2/09 1:11','Chair',1200,'Mastercard','Lena','Kuopio','Ita-Suomen Laani','Finland','12/31/08 2:48','1/7/09 10:20',62.9,27.6833333);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/1/09 2:24','Chair',1200,'Visa','Lisa','Sugar Land','TX','United states','1/1/09 1:56','1/7/09 10:52',29.61944,-95.63472);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/7/09 8:08','Chair',1200,'Diners','Bryan Kerrene','New York','NY','United states','1/7/09 7:39','1/7/09 12:38',40.71417,-74.00639);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/2/09 2:57','Chair',1200,'Visa','chris','London','England','United Kingdom','1/3/08 7:23','1/7/09 13:14',51.52721,0.14559);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/1/09 20:21','Chair',1200,'Visa','Maxine','Morton','IL','United states','10/24/08 6:48','1/7/09 20:49',40.61278,-89.45917);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/8/09 0:42','Chair',1200,'Visa','Family','Los Gatos','CA','United states','1/8/09 0:28','1/8/09 3:39',37.22667,-121.97361);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/8/09 3:56','Chair',1200,'Mastercard','Katherine','New York','NY','United states','1/8/09 3:33','1/8/09 6:19',40.71417,-74.00639);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/8/09 3:16','Bed',7500,'Mastercard','Linda','Miami','FL','United states','1/8/09 3:06','1/8/09 6:34',25.77389,-80.19389);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/8/09 1:59','Chair',1200,'Mastercard','SYLVIA','Vesenaz','Geneve','Switzerland','11/28/07 11:56','1/8/09 7:20',46.2333333,6.2);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/3/09 9:03','Chair',1200,'Diners','Sheila','Brooklyn','NY','United states','1/3/09 8:47','1/8/09 10:38',40.65,-73.95);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/5/09 13:17','Chair',1200,'Mastercard','Stephanie','Badhoevedorp','Noord-Holland','Netherlands','1/5/09 12:45','1/8/09 11:45',52.3333333,4.7833333);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/6/09 7:46','Chair',1200,'Amex','Kelly','Reston','VA','United states','1/6/09 7:30','1/8/09 12:40',38.96861,-77.34139);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/5/09 20:00','Couch',3600,'Visa','James','Burpengary','Queensland','Australia','12/10/08 19:53','1/8/09 17:58',-27.1666667,152.95);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/8/09 16:24','Chair',1200,'Visa','jennifer','Phoenix','AZ','United states','1/8/09 15:57','1/8/09 18:30',33.44833,-112.07333);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/9/09 6:39','Chair',1200,'Mastercard','Anneli','Houston','TX','United states','1/9/09 5:09','1/9/09 7:11',29.76306,-95.36306);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/6/09 22:19','Bed',7500,'Amex','Ritz','Pittsfield','VT','United states','1/6/09 12:00','1/9/09 10:05',43.77222,-72.81333);
+
+--display the database by which sales were over 1500 and sold in the United States
+SELECT * FROM sales WHERE price>1500 AND country = 'United states';
+
+--display which countries had an average sales of over 1200
+SELECT * FROM sales;
+SELECT country, AVG(price) AS avg_price FROM sales
+GROUP BY country
+HAVING avg_price >1200;
