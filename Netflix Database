@@ -82,7 +82,7 @@ WHERE titles.title='The Starling';
 
 --This was to find the oldest movie and the year it was added
 SELECT *
-FROM "netflix_titles_info" titles
+FROM "netflix_titles_info" 
 WHERE type='Movie'
 ORDER BY release_year
 LIMIT 1;
