@@ -39,10 +39,14 @@ INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,co
 INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/6/09 22:19','Bed',7500,'Amex','Ritz','Pittsfield','VT','United states','1/6/09 12:00','1/9/09 10:05',43.77222,-72.81333);
 
 --display the database by which sales were over 1500 and sold in the United States
-SELECT * FROM sales WHERE price>1500 AND country = 'United states';
+SELECT * 
+FROM sales 
+WHERE price>1500 
+AND country = 'United states';
 
 --display which countries had an average sales of over 1200
-SELECT * FROM sales;
+SELECT * 
+FROM sales;
 SELECT country, AVG(price) AS avg_price FROM sales
 GROUP BY country
 HAVING avg_price >1200;
