@@ -1,7 +1,7 @@
 
 - For the following questions, I used a dataset called chinook, which represents a digital media store and includes tables for artists, albums, media tracks, invoices, and customers.
 
-1. Find the Invoices of customers who are from Brazil. The resulting table should show the customer's full name, Invoice ID, Date of the invoice, and billing country.
+1. Find the Invoices of customers who are from Brazil. 
 SELECT cust.FirstName, cust.LastName, inv.InvoiceId, inv.BillingCountry, inv.InvoiceDate
 FROM chinook.invoices as inv 
 LEFT JOIN chinook.customers as cust 
