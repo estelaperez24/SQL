@@ -1,0 +1,23 @@
+The following queries were made with data pulled from the Twitter US Airline Sentiment set from Kaggle
+
+-Show results with only negative airline sentiments
+SELECT *
+FROM tweets
+WHERE airline_sentiment='negative'
+
+-Show the negative airline sentiment with the highest retweet count
+SELECT *
+FROM tweets
+WHERE airline_sentiment='negative'
+ORDER BY retweet_count desc
+LIMIT 1
+
+-Show the average airline sentiment confidence per airline
+SELECT AVG(airline_sentiment_confidence), airline
+FROM tweets
+GROUP BY airline
+
+-Show all info for tweets where the tweet location has 'USA' anywhere in the column
+SELECT *
+FROM tweets
+WHERE tweet_location LIKE '%USA%'
